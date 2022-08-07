@@ -1,3 +1,3 @@
 # etchysketchy
 
-Project: Etch-a-Sketch for The Odin Project Foundations Course
+Project: Etch-a-Sketch for The Odin Project's Foundations Course
