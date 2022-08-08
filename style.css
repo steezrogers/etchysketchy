@@ -1,20 +1,38 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    font-family: 'Pacifico', cursive;
+}
+
+h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .container {
     display: grid;
     width: 75vh;
     height: 75vh;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(var(--colNum), auto);
+    grid-template-rows: repeat(var(--rowNum), auto);
     border: 5px solid black;
 }
 
 .square {
     border: 1px dotted black;
     background-color: white;
+}
+
+#change {
+    margin-top: 35px;
+    margin-bottom: 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    border: 4px solid black;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
 }
