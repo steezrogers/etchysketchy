@@ -23,11 +23,11 @@ const change = document.getElementById('change');
 change.addEventListener('click', squares);
 
 function squares() {
-    let box = prompt(`Please enter a value from 16 to 100.`);
-        if ((box > 0 && box < 16) || box > 100 || isNaN(box)) {
+    let box = prompt(`Please enter a value from 16 to 100 (creates a value * value grid).`);
+        if (box < 0 || box == 0 || (box > 0 && box < 16) || box > 100 || isNaN(box)) {
             alert(`Please enter a valid number.`);
             return squares();
-        } else if (box == null) {
+        } else if (box === null) {
             return;
         }
     remove(container);
