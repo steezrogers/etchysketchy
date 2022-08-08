@@ -9,3 +9,8 @@ function grid() {
 }
 
 grid();
+
+const etch = document.querySelectorAll('.square');
+etch.forEach(square => square.addEventListener('mouseover', function sketch(event) {
+    event.target.style.backgroundColor = 'black';
+}));
